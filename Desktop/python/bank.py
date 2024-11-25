@@ -1,39 +1,4 @@
-'''class Bank:
-    def __init__(self,accno,name,type):
-        self.accno=accno
-        self.name=name
-        self.type=type
-        self.amount=0
-        self.balance=0
-    def deposit(self,amount):
-        self.balance+=self.amount
-        print("Deposited amount is: ",self.amount)
-        print("Available balance: ",self.balance)
-    def withdraw(self,amount):
-        if(self.amount < self.balance):
-            print("Insufficient Funds!!!")
-        else:
-            self.balance-=self.amount
-            print("available balance: ",self.balance)
-    def display(self):
-        print("Available Balance is: ",self.balance)
-accno=int(input("Enter your acc no: "))
-name=input("Enter your name: ")
-type=input("Enter your type of account: ")
-member=Bank(accno,name,type)
-while True:
-    choice=int(input("Enter your Choice\n1.Deposit\n2.Withdraw\n3.Check Balance\n4.Exit\n"))
-    if(choice==1):
-        amount=int(input("Enter the amount to be deposited: "))
-        member.deposit(amount)
-    elif(choice==2):
-        amount=int(input("Enter the amount to be withdrawP:  "))
-        member.withdraw(amount)
-    elif(choice==3):
-        member.display()
-    else:
-        print("Exiting.......")
-        exit()'''
+
 class Bank:
     def __init__(self, accno, name, acc_type):
         self.accno = accno
